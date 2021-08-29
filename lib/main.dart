@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     ]);
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "Splash",
+      title: "TOP INTERVIEW QUESTIONS",
       home: SplashScreen(),
     );
   }
