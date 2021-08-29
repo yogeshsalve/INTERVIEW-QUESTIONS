@@ -959,7 +959,7 @@ class Ajax extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "1. ",
+                            "26. How can AJAX applications be debugged?",
                             style: TextStyle(
                                 fontSize: 20.0, fontWeight: FontWeight.bold),
                           ),
@@ -967,7 +967,7 @@ class Ajax extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "",
+                            "Two tools are used for debugging:\n\nFiddler for IE\n\nFirebug for Mozilla.",
                             style: TextStyle(fontSize: 20.0),
                           ),
                         ],
@@ -995,7 +995,7 @@ class Ajax extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "1. ",
+                            "27. How can we cancel the XMLHttpRequest in AJAX?",
                             style: TextStyle(
                                 fontSize: 20.0, fontWeight: FontWeight.bold),
                           ),
@@ -1003,7 +1003,7 @@ class Ajax extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "",
+                            "Abort() method can be called to cancel the XMLHttpRequest in Ajax.",
                             style: TextStyle(fontSize: 20.0),
                           ),
                         ],
@@ -1031,7 +1031,7 @@ class Ajax extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "1. ",
+                            "28. Is AJAX code cross browser compatible?",
                             style: TextStyle(
                                 fontSize: 20.0, fontWeight: FontWeight.bold),
                           ),
@@ -1039,7 +1039,7 @@ class Ajax extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "",
+                            "No, it is supporting cross browser compatible. If the browsers supports native XMLHttpRequest JavaScript object, then this can be used.",
                             style: TextStyle(fontSize: 20.0),
                           ),
                         ],
@@ -1067,7 +1067,7 @@ class Ajax extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "1. ",
+                            "29. What is the name of object used for AJAX request?",
                             style: TextStyle(
                                 fontSize: 20.0, fontWeight: FontWeight.bold),
                           ),
@@ -1075,7 +1075,7 @@ class Ajax extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "",
+                            "XmlHttpRequest object is used for Ajax requests.",
                             style: TextStyle(fontSize: 20.0),
                           ),
                         ],
@@ -1103,7 +1103,7 @@ class Ajax extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "1. ",
+                            "30. What is prerequisite for Update Panel in Ajax?",
                             style: TextStyle(
                                 fontSize: 20.0, fontWeight: FontWeight.bold),
                           ),
@@ -1111,7 +1111,7 @@ class Ajax extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "",
+                            "Script Manager is pre-requisite to use Update Panel controls.",
                             style: TextStyle(fontSize: 20.0),
                           ),
                         ],
@@ -1139,7 +1139,7 @@ class Ajax extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "1. ",
+                            "31.  How many update panel can be used per page?",
                             style: TextStyle(
                                 fontSize: 20.0, fontWeight: FontWeight.bold),
                           ),
@@ -1147,7 +1147,7 @@ class Ajax extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "",
+                            "There are no restrictions on the number of update panels per page.",
                             style: TextStyle(fontSize: 20.0),
                           ),
                         ],
@@ -1175,7 +1175,7 @@ class Ajax extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "1. ",
+                            "32. What is Script Manager?",
                             style: TextStyle(
                                 fontSize: 20.0, fontWeight: FontWeight.bold),
                           ),
@@ -1183,7 +1183,7 @@ class Ajax extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "",
+                            "Script Manager helps manage the client side script of AJAX. Script Manager acts as a mediator as AJAX depends on JavaScript. Every page that uses AJAX has a Script Manager to enable AJAX libraries.",
                             style: TextStyle(fontSize: 20.0),
                           ),
                         ],
@@ -1211,7 +1211,7 @@ class Ajax extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "1. ",
+                            "33.  How Ajax objects can be created?",
                             style: TextStyle(
                                 fontSize: 20.0, fontWeight: FontWeight.bold),
                           ),
@@ -1219,7 +1219,7 @@ class Ajax extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "",
+                            "Following syntax can be used to create Ajax objects:\n\nVar sample = New ajaxObject('path of the page')",
                             style: TextStyle(fontSize: 20.0),
                           ),
                         ],
@@ -1247,7 +1247,7 @@ class Ajax extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "1. ",
+                            "34. What are the protocols used by Ajax?",
                             style: TextStyle(
                                 fontSize: 20.0, fontWeight: FontWeight.bold),
                           ),
@@ -1255,7 +1255,7 @@ class Ajax extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "",
+                            "HTTP’s GET or POST\n\nXMLHttpRequest for placing a request with the web server\n\nUses JSON to communicate between the client and server\n\nUED or URL encoded data",
                             style: TextStyle(fontSize: 20.0),
                           ),
                         ],
@@ -1283,7 +1283,7 @@ class Ajax extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "1. ",
+                            "35. UED or URL encoded data  ",
                             style: TextStyle(
                                 fontSize: 20.0, fontWeight: FontWeight.bold),
                           ),
@@ -1291,7 +1291,7 @@ class Ajax extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "",
+                            "Security issues that can be encountered\n\nWhen Ajax calls are sent through plain text and it may lead to know the database details\n\nInserting scripts can also be possible and attackers can easily penetrate into the system",
                             style: TextStyle(fontSize: 20.0),
                           ),
                         ],
@@ -1319,7 +1319,7 @@ class Ajax extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "1. ",
+                            "36. How can we handle concurrent requests?",
                             style: TextStyle(
                                 fontSize: 20.0, fontWeight: FontWeight.bold),
                           ),
@@ -1327,7 +1327,7 @@ class Ajax extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "",
+                            "Javascript functions should be written to handle concurrent requests and call back function can be passed as a parameter. Those parameters are passed to AjaxInteraction(URL, callback) object.",
                             style: TextStyle(fontSize: 20.0),
                           ),
                         ],
@@ -1355,7 +1355,7 @@ class Ajax extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "1. ",
+                            "37. Define the role of the Update Panel?",
                             style: TextStyle(
                                 fontSize: 20.0, fontWeight: FontWeight.bold),
                           ),
@@ -1363,7 +1363,7 @@ class Ajax extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "",
+                            "Update Panel is used to add functionality to the existing ASP.NET applications. By using partial page rendering, it can be used to update the content. Refresh can be made for the partial page instead of whole page.",
                             style: TextStyle(fontSize: 20.0),
                           ),
                         ],
@@ -1391,7 +1391,7 @@ class Ajax extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "1. ",
+                            "38. Can we use nested update panel in Ajax?",
                             style: TextStyle(
                                 fontSize: 20.0, fontWeight: FontWeight.bold),
                           ),
@@ -1399,7 +1399,7 @@ class Ajax extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "",
+                            "Yes, we can use nested update panel in Ajax. Update panels can be nested to have more control over the Page Refresh.",
                             style: TextStyle(fontSize: 20.0),
                           ),
                         ],
@@ -1427,7 +1427,7 @@ class Ajax extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "1. ",
+                            "39. What are the types of post back in Ajax?",
                             style: TextStyle(
                                 fontSize: 20.0, fontWeight: FontWeight.bold),
                           ),
@@ -1435,7 +1435,7 @@ class Ajax extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "",
+                            "There are two types of post backs:\n\nSynchronous Postback\n\nAsynchronous Postback",
                             style: TextStyle(fontSize: 20.0),
                           ),
                         ],
@@ -1463,7 +1463,7 @@ class Ajax extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "1. ",
+                            "40. How can we handle exception handling in Ajax?",
                             style: TextStyle(
                                 fontSize: 20.0, fontWeight: FontWeight.bold),
                           ),
@@ -1471,7 +1471,7 @@ class Ajax extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "",
+                            "ErrorTemplate which is the child tag of Script Manager is used to handle exception handling in Ajax.",
                             style: TextStyle(fontSize: 20.0),
                           ),
                         ],
@@ -1499,7 +1499,7 @@ class Ajax extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "1. ",
+                            "41. What are the components of the ASP.NET Ajax Client Library?",
                             style: TextStyle(
                                 fontSize: 20.0, fontWeight: FontWeight.bold),
                           ),
@@ -1507,7 +1507,7 @@ class Ajax extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "",
+                            "Following components are used in Ajax client library:\n\nComponent Layer\n\nCore Services Layer\n\nBrowser Compatibility Layer",
                             style: TextStyle(fontSize: 20.0),
                           ),
                         ],
@@ -1535,7 +1535,7 @@ class Ajax extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "1. ",
+                            "42. What are the controls of the Script Management group?",
                             style: TextStyle(
                                 fontSize: 20.0, fontWeight: FontWeight.bold),
                           ),
@@ -1543,7 +1543,7 @@ class Ajax extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "",
+                            "The controls of script Management group are:\n\nScriptManager\n\nScriptManagerProxy",
                             style: TextStyle(fontSize: 20.0),
                           ),
                         ],
@@ -1561,6 +1561,82 @@ class Ajax extends StatelessWidget {
                   ),
                   //*****************************************
 
+                  SingleChildScrollView(
+                    child: Container(
+                      child: Padding(
+                        padding: const EdgeInsets.all(12.0),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            SizedBox(
+                              height: size.height * 0.05,
+                            ),
+                            Text(
+                              "43. What are all the different data types that JSON supports?",
+                              style: TextStyle(
+                                  fontSize: 20.0, fontWeight: FontWeight.bold),
+                            ),
+                            SizedBox(
+                              height: size.height * 0.05,
+                            ),
+                            Text(
+                              "JSON supports following data types:\n\nString\n\nNumber\n\nBoolean\n\nArray\n\nObject\n\nNull",
+                              style: TextStyle(fontSize: 20.0),
+                            ),
+                          ],
+                        ),
+                      ),
+                      width: size.width * 0.9,
+                      // width: 200.0,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10.0),
+                          color: Colors.grey[200],
+                          boxShadow: [
+                            BoxShadow(color: Colors.black, blurRadius: 12.0)
+                          ],
+                          border: Border.all(color: Colors.black)),
+                    ),
+                  ),
+                  //*****************************************
+                  SingleChildScrollView(
+                    child: Container(
+                      child: Padding(
+                        padding: const EdgeInsets.all(12.0),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            SizedBox(
+                              height: size.height * 0.05,
+                            ),
+                            Text(
+                              "44. What are the goals of Ajax?",
+                              style: TextStyle(
+                                  fontSize: 20.0, fontWeight: FontWeight.bold),
+                            ),
+                            SizedBox(
+                              height: size.height * 0.05,
+                            ),
+                            Text(
+                              "The basic goals of ASP.NET Ajax are:\n\nReduced web server hits\n\nReduced Network load\n\nInteractive user interface\n\nPlatform and architecture neutrality\n\nSupport for both synchronous and asynchronous communication\n\nProvide a server- and client-side framework",
+                              style: TextStyle(fontSize: 20.0),
+                            ),
+                          ],
+                        ),
+                      ),
+                      width: size.width * 0.9,
+                      // width: 200.0,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10.0),
+                          color: Colors.grey[200],
+                          boxShadow: [
+                            BoxShadow(color: Colors.black, blurRadius: 12.0)
+                          ],
+                          border: Border.all(color: Colors.black)),
+                    ),
+                  ),
+                  //*****************************************
                   Container(
                     child: Padding(
                       padding: const EdgeInsets.all(12.0),
@@ -1572,7 +1648,7 @@ class Ajax extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "1. ",
+                            "45. What is the difference between proxied and proxyless calls in AJAX?",
                             style: TextStyle(
                                 fontSize: 20.0, fontWeight: FontWeight.bold),
                           ),
@@ -1580,7 +1656,7 @@ class Ajax extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "",
+                            "Proxied calls are made through stub objects which can be called from PHP classes on the JavaScript side in AJAX.\n\nProxyless calls are made using utility JavaScript functions like HTML_AJAX.replace() and HTML_AJAX.append() in AJAX.",
                             style: TextStyle(fontSize: 20.0),
                           ),
                         ],
@@ -1608,7 +1684,7 @@ class Ajax extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "1. ",
+                            "46. How many types of ready states in Ajax?",
                             style: TextStyle(
                                 fontSize: 20.0, fontWeight: FontWeight.bold),
                           ),
@@ -1616,7 +1692,81 @@ class Ajax extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "",
+                            "There are four ready states in Ajax:\n\nInitialization\n\nRequest\n\nProcess\n\nReady",
+                            style: TextStyle(fontSize: 20.0),
+                          ),
+                        ],
+                      ),
+                    ),
+                    width: size.width * 0.9,
+                    // width: 200.0,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10.0),
+                        color: Colors.grey[200],
+                        boxShadow: [
+                          BoxShadow(color: Colors.black, blurRadius: 12.0)
+                        ],
+                        border: Border.all(color: Colors.black)),
+                  ),
+                  //*****************************************
+                  SingleChildScrollView(
+                    child: Container(
+                      child: Padding(
+                        padding: const EdgeInsets.all(12.0),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            SizedBox(
+                              height: size.height * 0.05,
+                            ),
+                            Text(
+                              "47. What is the difference between RegisterClientScriptBlock, RegisterClientScriptInclude and RegisterClientScriptResource?",
+                              style: TextStyle(
+                                  fontSize: 20.0, fontWeight: FontWeight.bold),
+                            ),
+                            SizedBox(
+                              height: size.height * 0.05,
+                            ),
+                            Text(
+                              "Following are the functions:\n\nRegisterClientScriptBlock – The script is specified as a string parameter.\n\nRegisterClientScriptInclude – By setting the source attribute to a URL that point to a script file.\n\nRegisterClientScriptResource – specifies Resource name in an assembly. The source attribute is automatically populated with a URL by a call to an HTTP handler that retrieves the named script from the assembly.",
+                              style: TextStyle(fontSize: 20.0),
+                            ),
+                          ],
+                        ),
+                      ),
+                      width: size.width * 0.9,
+                      // width: 200.0,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10.0),
+                          color: Colors.grey[200],
+                          boxShadow: [
+                            BoxShadow(color: Colors.black, blurRadius: 12.0)
+                          ],
+                          border: Border.all(color: Colors.black)),
+                    ),
+                  ),
+                  //*****************************************
+                  Container(
+                    child: Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          SizedBox(
+                            height: size.height * 0.05,
+                          ),
+                          Text(
+                            "48. Which request is better, Get or Post?",
+                            style: TextStyle(
+                                fontSize: 20.0, fontWeight: FontWeight.bold),
+                          ),
+                          SizedBox(
+                            height: size.height * 0.05,
+                          ),
+                          Text(
+                            "AJAX requests should use an HTTP GET request where the data does not change for a given URL requested.\n\nAn HTTP POST should be used when state is updated on the server. This is highly recommended for a consistent web application architecture.",
                             style: TextStyle(fontSize: 20.0),
                           ),
                         ],
@@ -1644,7 +1794,7 @@ class Ajax extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "1. ",
+                            "49. What are the limitations of Ajax?",
                             style: TextStyle(
                                 fontSize: 20.0, fontWeight: FontWeight.bold),
                           ),
@@ -1652,7 +1802,7 @@ class Ajax extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "",
+                            "An Ajax Web Application tends to confuse end users if the network bandwidth is slow and there is no full postback running.",
                             style: TextStyle(fontSize: 20.0),
                           ),
                         ],
@@ -1669,220 +1819,66 @@ class Ajax extends StatelessWidget {
                         border: Border.all(color: Colors.black)),
                   ),
                   //*****************************************
-                  Container(
-                    child: Padding(
-                      padding: const EdgeInsets.all(12.0),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "1. ",
-                            style: TextStyle(
-                                fontSize: 20.0, fontWeight: FontWeight.bold),
-                          ),
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "",
-                            style: TextStyle(fontSize: 20.0),
-                          ),
-                        ],
+                  SingleChildScrollView(
+                    child: Container(
+                      child: Padding(
+                        padding: const EdgeInsets.all(12.0),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            SizedBox(
+                              height: size.height * 0.05,
+                            ),
+                            Text(
+                              "50. What are the difference between AJAX and Javascript?",
+                              style: TextStyle(
+                                  fontSize: 20.0, fontWeight: FontWeight.bold),
+                            ),
+                            SizedBox(
+                              height: size.height * 0.05,
+                            ),
+                            Text(
+                              "The differences between AJAX and JavaScript are as follows:",
+                              style: TextStyle(fontSize: 20.0),
+                            ),
+                            SizedBox(
+                              height: size.height * 0.01,
+                            ),
+                            Text(
+                              "AJAX",
+                              style: TextStyle(
+                                  fontSize: 20.0, fontWeight: FontWeight.bold),
+                            ),
+                            Text(
+                              "AJAX sends request to the server and does not wait for the response. It performs other operations on the page during that time\n\nAJAX does not require the page to refresh for downloading the whole page\n\nAJAX minimizes the overload on the server since the script needs to request once",
+                              style: TextStyle(fontSize: 20.0),
+                            ),
+                            SizedBox(
+                              height: size.height * 0.01,
+                            ),
+                            Text(
+                              "Javascript",
+                              style: TextStyle(
+                                  fontSize: 20.0, fontWeight: FontWeight.bold),
+                            ),
+                            Text(
+                              "JavaScript make a request to the server and waits for response\n\nJavaScript manages and controls a Web page after being downloaded\n\nJavaScript posts a request that updates the script every time",
+                              style: TextStyle(fontSize: 20.0),
+                            ),
+                          ],
+                        ),
                       ),
+                      width: size.width * 0.9,
+                      // width: 200.0,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10.0),
+                          color: Colors.grey[200],
+                          boxShadow: [
+                            BoxShadow(color: Colors.black, blurRadius: 12.0)
+                          ],
+                          border: Border.all(color: Colors.black)),
                     ),
-                    width: size.width * 0.9,
-                    // width: 200.0,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10.0),
-                        color: Colors.grey[200],
-                        boxShadow: [
-                          BoxShadow(color: Colors.black, blurRadius: 12.0)
-                        ],
-                        border: Border.all(color: Colors.black)),
-                  ),
-                  //*****************************************
-                  Container(
-                    child: Padding(
-                      padding: const EdgeInsets.all(12.0),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "1. ",
-                            style: TextStyle(
-                                fontSize: 20.0, fontWeight: FontWeight.bold),
-                          ),
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "",
-                            style: TextStyle(fontSize: 20.0),
-                          ),
-                        ],
-                      ),
-                    ),
-                    width: size.width * 0.9,
-                    // width: 200.0,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10.0),
-                        color: Colors.grey[200],
-                        boxShadow: [
-                          BoxShadow(color: Colors.black, blurRadius: 12.0)
-                        ],
-                        border: Border.all(color: Colors.black)),
-                  ),
-                  //*****************************************
-                  Container(
-                    child: Padding(
-                      padding: const EdgeInsets.all(12.0),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "1. ",
-                            style: TextStyle(
-                                fontSize: 20.0, fontWeight: FontWeight.bold),
-                          ),
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "",
-                            style: TextStyle(fontSize: 20.0),
-                          ),
-                        ],
-                      ),
-                    ),
-                    width: size.width * 0.9,
-                    // width: 200.0,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10.0),
-                        color: Colors.grey[200],
-                        boxShadow: [
-                          BoxShadow(color: Colors.black, blurRadius: 12.0)
-                        ],
-                        border: Border.all(color: Colors.black)),
-                  ),
-                  //*****************************************
-                  Container(
-                    child: Padding(
-                      padding: const EdgeInsets.all(12.0),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "1. ",
-                            style: TextStyle(
-                                fontSize: 20.0, fontWeight: FontWeight.bold),
-                          ),
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "",
-                            style: TextStyle(fontSize: 20.0),
-                          ),
-                        ],
-                      ),
-                    ),
-                    width: size.width * 0.9,
-                    // width: 200.0,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10.0),
-                        color: Colors.grey[200],
-                        boxShadow: [
-                          BoxShadow(color: Colors.black, blurRadius: 12.0)
-                        ],
-                        border: Border.all(color: Colors.black)),
-                  ),
-                  //*****************************************
-                  Container(
-                    child: Padding(
-                      padding: const EdgeInsets.all(12.0),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "1. ",
-                            style: TextStyle(
-                                fontSize: 20.0, fontWeight: FontWeight.bold),
-                          ),
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "",
-                            style: TextStyle(fontSize: 20.0),
-                          ),
-                        ],
-                      ),
-                    ),
-                    width: size.width * 0.9,
-                    // width: 200.0,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10.0),
-                        color: Colors.grey[200],
-                        boxShadow: [
-                          BoxShadow(color: Colors.black, blurRadius: 12.0)
-                        ],
-                        border: Border.all(color: Colors.black)),
-                  ),
-                  //*****************************************
-                  Container(
-                    child: Padding(
-                      padding: const EdgeInsets.all(12.0),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "1. ",
-                            style: TextStyle(
-                                fontSize: 20.0, fontWeight: FontWeight.bold),
-                          ),
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "",
-                            style: TextStyle(fontSize: 20.0),
-                          ),
-                        ],
-                      ),
-                    ),
-                    width: size.width * 0.9,
-                    // width: 200.0,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10.0),
-                        color: Colors.grey[200],
-                        boxShadow: [
-                          BoxShadow(color: Colors.black, blurRadius: 12.0)
-                        ],
-                        border: Border.all(color: Colors.black)),
                   ),
                   //*****************************************
                 ],
