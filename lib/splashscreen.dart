@@ -15,7 +15,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     // getUserName();
-    Timer(Duration(seconds: 1), () {
+    Timer(Duration(seconds: 5), () {
       Navigator.of(context).pushReplacement(
           MaterialPageRoute(builder: (BuildContext context) => Dashboard()));
     });
@@ -38,12 +38,12 @@ class _SplashScreenState extends State<SplashScreen> {
               // ),
               Container(
                 margin: EdgeInsets.all(10),
-                // width: size.width * 0.5,
+                width: size.width * 0.8,
                 height: size.height * 0.5,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   image: DecorationImage(
-                      image: AssetImage('images/splash.jpg'), fit: BoxFit.fill),
+                      image: AssetImage('images/algo1.png'), fit: BoxFit.fill),
                 ),
               ),
 
