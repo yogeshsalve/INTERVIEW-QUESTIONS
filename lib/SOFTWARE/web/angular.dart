@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:top_interview_questions/SOFTWARE/web/webcategories.dart';
+import 'package:top_interview_questions/dashboard.dart';
 
 class Angular extends StatelessWidget {
   const Angular({Key? key}) : super(key: key);
@@ -1871,6 +1872,55 @@ class Angular extends StatelessWidget {
                             "HttpInterceptors are part of the @angular/common/http module and are used to inspect and transform HTTP requests and HTTP responses as well. These interceptors are created to perform checks on a request, manipulate the response, and perform cross-cutting concerns, such as logging requests, authenticating a user using a request, using gzip to compress the response, etc.",
                             style: TextStyle(fontSize: 20.0),
                           ),
+                        ],
+                      ),
+                    ),
+                    width: size.width * 0.9,
+                    // width: 200.0,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10.0),
+                        color: Colors.grey[200],
+                        boxShadow: [
+                          BoxShadow(color: Colors.black, blurRadius: 12.0)
+                        ],
+                        border: Border.all(color: Colors.black)),
+                  ),
+                  Container(
+                    child: Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Center(child: Image.asset("images/algo3.png")),
+                          Center(
+                            child: Text(
+                              "To read again swipe the card",
+                              style: TextStyle(
+                                  fontSize: 24.0, fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                          SizedBox(
+                            height: size.height * 0.05,
+                          ),
+                          Center(
+                            child: ElevatedButton(
+                              onPressed: () {
+                                Navigator.of(context).pushReplacement(
+                                    MaterialPageRoute(
+                                        builder: (BuildContext context) =>
+                                            Dashboard()));
+                              },
+                              style: ElevatedButton.styleFrom(
+                                  primary: Colors.red,
+                                  padding: EdgeInsets.symmetric(
+                                      horizontal: 50, vertical: 10),
+                                  textStyle: TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold)),
+                              child: Text("Exit"),
+                            ),
+                          )
                         ],
                       ),
                     ),

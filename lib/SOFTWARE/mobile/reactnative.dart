@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:top_interview_questions/SOFTWARE/web/webcategories.dart';
+import 'package:top_interview_questions/SOFTWARE/mobile/mobcategories.dart';
 import 'package:top_interview_questions/dashboard.dart';
 
-class Bootstrap extends StatelessWidget {
-  const Bootstrap({Key? key}) : super(key: key);
+class ReactNative extends StatelessWidget {
+  const ReactNative({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,14 +18,10 @@ class Bootstrap extends StatelessWidget {
           icon: Icon(Icons.arrow_back),
           onPressed: () {
             Navigator.of(context).pushReplacement(MaterialPageRoute(
-                builder: (BuildContext context) => WebCategories()));
+                builder: (BuildContext context) => MobCategories()));
           },
         ),
-        title: const Text('Bootstrap Questions'),
-        // automaticallyImplyLeading: true,
-        // leading: IconButton(icon:Icon(Icons.arrow_back),
-        // onPressed:() => Navigator.pop(context, MaterialPageRoute(builder: (context) => MainScreen()),),
-        // ),
+        title: const Text('ReactNative Questions'),
       ),
       body: Container(
         color: Colors.yellow[300],
@@ -55,7 +51,7 @@ class Bootstrap extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "1. Define what Bootstrap is.",
+                            "1.What is List View?",
                             style: TextStyle(
                                 fontSize: 20.0, fontWeight: FontWeight.bold),
                           ),
@@ -63,7 +59,7 @@ class Bootstrap extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "Bootstrap is a front-end framework that is commonly used to create HTML, CSS, and JS web applications. Its layout is very responsive, fast, and easy to use. It mostly focuses on building mobile applications using design templates. You can also create interactive components like drop-downs, forms, buttons, button groups, alerts, cards, tabs, and many more components.",
+                            "List view is a core component of React Native which displays vertically scrolling lists.",
                             style: TextStyle(fontSize: 20.0),
                           ),
                         ],
@@ -91,7 +87,7 @@ class Bootstrap extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "2. Why Bootstrap is used for mobile application developments?",
+                            "2. What is Virtual DOM?",
                             style: TextStyle(
                                 fontSize: 20.0, fontWeight: FontWeight.bold),
                           ),
@@ -99,81 +95,7 @@ class Bootstrap extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "It is used for mobile application developments because it has several responsive features and design templates that are easy to use. In other terms, it uses a Mobile-first approach.",
-                            style: TextStyle(fontSize: 20.0),
-                          ),
-                        ],
-                      ),
-                    ),
-                    width: size.width * 0.9,
-                    // width: 200.0,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10.0),
-                        color: Colors.grey[200],
-                        boxShadow: [
-                          BoxShadow(color: Colors.black, blurRadius: 12.0)
-                        ],
-                        border: Border.all(color: Colors.black)),
-                  ),
-                  //*****************************************
-                  SingleChildScrollView(
-                    child: Container(
-                      child: Padding(
-                        padding: const EdgeInsets.all(12.0),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            SizedBox(
-                              height: size.height * 0.05,
-                            ),
-                            Text(
-                              "3.  What are the main features of Bootstrap 4.",
-                              style: TextStyle(
-                                  fontSize: 20.0, fontWeight: FontWeight.bold),
-                            ),
-                            SizedBox(
-                              height: size.height * 0.05,
-                            ),
-                            Text(
-                              "Its features include:\n\nFree and open-source.\n\nCompatible with almost all modern browsers like Google Chrome, Firefox, Safari, Opera, and Internet Explorer.\n\nResponsive features.\n\nEasy to use.\n\nLightweight.\n\nConsists of several components and utilities.\n\nSupport for jQuery plugins.\n\nEasily customizable.\n\nMobile-friendliness.\n\nSimple integration.\n\nGood documentation support.Availability of a large number of templates, themes, and plugins.",
-                              style: TextStyle(fontSize: 20.0),
-                            ),
-                          ],
-                        ),
-                      ),
-                      width: size.width * 0.9,
-                      // width: 200.0,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10.0),
-                          color: Colors.grey[200],
-                          boxShadow: [
-                            BoxShadow(color: Colors.black, blurRadius: 12.0)
-                          ],
-                          border: Border.all(color: Colors.black)),
-                    ),
-                  ),
-                  //*****************************************
-                  Container(
-                    child: Padding(
-                      padding: const EdgeInsets.all(12.0),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "4.  Name key components of Bootstrap 4.",
-                            style: TextStyle(
-                                fontSize: 20.0, fontWeight: FontWeight.bold),
-                          ),
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "Its key components include:\n\nScaffolding: Bootstrap built on a responsive grid system consists of a 12-column grid.\n\nJS Plugins: Contains JS and jQuery plugins.\n\nCSS: Contains CSS files.",
+                            "Virtual dom is an in-memory tree representation of the real DOM with lightweight elements. It provides a declarative way of DOM representation for an app and allows to update UI whenever the state changes.",
                             style: TextStyle(fontSize: 20.0),
                           ),
                         ],
@@ -201,7 +123,7 @@ class Bootstrap extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "5. What do you understand by the term container?",
+                            "3. What are some ways of styling a react native component? ",
                             style: TextStyle(
                                 fontSize: 20.0, fontWeight: FontWeight.bold),
                           ),
@@ -209,7 +131,7 @@ class Bootstrap extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "Containers are the most fundamental components in Bootstrap. It behaves like a container where you can put HTML code, and it is a part within the page where the content of the site can be placed to make it responsive and fast.",
+                            "Inline styling\n\nStyleSheet\n\nStyled Components",
                             style: TextStyle(fontSize: 20.0),
                           ),
                         ],
@@ -237,7 +159,7 @@ class Bootstrap extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "6. What do you mean by Bootstrap ClassLoader?",
+                            "4.What is the difference between RCT & RNT?",
                             style: TextStyle(
                                 fontSize: 20.0, fontWeight: FontWeight.bold),
                           ),
@@ -245,223 +167,7 @@ class Bootstrap extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "Bootstrap ClassLoader is a part of Java and a main parental class of class loader.",
-                            style: TextStyle(fontSize: 20.0),
-                          ),
-                        ],
-                      ),
-                    ),
-                    width: size.width * 0.9,
-                    // width: 200.0,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10.0),
-                        color: Colors.grey[200],
-                        boxShadow: [
-                          BoxShadow(color: Colors.black, blurRadius: 12.0)
-                        ],
-                        border: Border.all(color: Colors.black)),
-                  ),
-                  //*****************************************
-                  Container(
-                    child: Padding(
-                      padding: const EdgeInsets.all(12.0),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "7. How many types of layouts are there in Bootstrap 4?",
-                            style: TextStyle(
-                                fontSize: 20.0, fontWeight: FontWeight.bold),
-                          ),
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "There are two types of layouts in Bootstrap 4.\n\nFluid layout\n\nFixed layout",
-                            style: TextStyle(fontSize: 20.0),
-                          ),
-                        ],
-                      ),
-                    ),
-                    width: size.width * 0.9,
-                    // width: 200.0,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10.0),
-                        color: Colors.grey[200],
-                        boxShadow: [
-                          BoxShadow(color: Colors.black, blurRadius: 12.0)
-                        ],
-                        border: Border.all(color: Colors.black)),
-                  ),
-                  //*****************************************
-                  Container(
-                    child: Padding(
-                      padding: const EdgeInsets.all(12.0),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "8. What is the fluid layout?",
-                            style: TextStyle(
-                                fontSize: 20.0, fontWeight: FontWeight.bold),
-                          ),
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "The fluid layout is useful when you need to make an app that involves the full width of the screen. The fluid layout adjusts itself according to the browser size.",
-                            style: TextStyle(fontSize: 20.0),
-                          ),
-                        ],
-                      ),
-                    ),
-                    width: size.width * 0.9,
-                    // width: 200.0,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10.0),
-                        color: Colors.grey[200],
-                        boxShadow: [
-                          BoxShadow(color: Colors.black, blurRadius: 12.0)
-                        ],
-                        border: Border.all(color: Colors.black)),
-                  ),
-                  //*****************************************
-                  Container(
-                    child: Padding(
-                      padding: const EdgeInsets.all(12.0),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "9. What is the fixed layout?",
-                            style: TextStyle(
-                                fontSize: 20.0, fontWeight: FontWeight.bold),
-                          ),
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "The fixed layout is the default layout type and it also responsive and easy to use. Unlike the fluid layout, it cannot adjust itself according to the browser size. The fixed layout should be 940px in most cases.",
-                            style: TextStyle(fontSize: 20.0),
-                          ),
-                        ],
-                      ),
-                    ),
-                    width: size.width * 0.9,
-                    // width: 200.0,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10.0),
-                        color: Colors.grey[200],
-                        boxShadow: [
-                          BoxShadow(color: Colors.black, blurRadius: 12.0)
-                        ],
-                        border: Border.all(color: Colors.black)),
-                  ),
-                  //*****************************************
-                  Container(
-                    child: Padding(
-                      padding: const EdgeInsets.all(12.0),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "10. How can you display code in Bootstrap?",
-                            style: TextStyle(
-                                fontSize: 20.0, fontWeight: FontWeight.bold),
-                          ),
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "You can display code in two ways.\n\n1.Using the <code> tag – This method is used to display code as inline code.\n\n2.Using the <pre> tag – This method is used to display code as a standalone block.",
-                            style: TextStyle(fontSize: 20.0),
-                          ),
-                        ],
-                      ),
-                    ),
-                    width: size.width * 0.9,
-                    // width: 200.0,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10.0),
-                        color: Colors.grey[200],
-                        boxShadow: [
-                          BoxShadow(color: Colors.black, blurRadius: 12.0)
-                        ],
-                        border: Border.all(color: Colors.black)),
-                  ),
-                  //*****************************************
-                  Container(
-                    child: Padding(
-                      padding: const EdgeInsets.all(12.0),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "11. How can you make an image round in Bootstrap 4?",
-                            style: TextStyle(
-                                fontSize: 20.0, fontWeight: FontWeight.bold),
-                          ),
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "You can use the .rounded class to make an image round.",
-                            style: TextStyle(fontSize: 20.0),
-                          ),
-                        ],
-                      ),
-                    ),
-                    width: size.width * 0.9,
-                    // width: 200.0,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10.0),
-                        color: Colors.grey[200],
-                        boxShadow: [
-                          BoxShadow(color: Colors.black, blurRadius: 12.0)
-                        ],
-                        border: Border.all(color: Colors.black)),
-                  ),
-                  //*****************************************
-                  Container(
-                    child: Padding(
-                      padding: const EdgeInsets.all(12.0),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "12. What is a progress bar?",
-                            style: TextStyle(
-                                fontSize: 20.0, fontWeight: FontWeight.bold),
-                          ),
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "A progress bar is an indicator to show the progress of a particular process.",
+                            "RNT Let’s say you want to use your own custom code written in iOS or Android. You have to prefix your native files with RNT.\n\nRCT The native React libraries provided by Facebook are prefixed with RCT.",
                             style: TextStyle(fontSize: 20.0),
                           ),
                         ],
@@ -490,7 +196,7 @@ class Bootstrap extends StatelessWidget {
                               height: size.height * 0.05,
                             ),
                             Text(
-                              "13. Name the contextual classes that are used with the progress bar.",
+                              "5.List the core components of React Native.",
                               style: TextStyle(
                                   fontSize: 20.0, fontWeight: FontWeight.bold),
                             ),
@@ -498,7 +204,7 @@ class Bootstrap extends StatelessWidget {
                               height: size.height * 0.05,
                             ),
                             Text(
-                              "The contextual classes used with the progress bar are as follows:\n\nThe .bg-primary class\n\nThe .bg-secondary class\n\nThe .bg-success class\n\nThe .bg-danger class\n\nThe .bg-warning class\n\nThe .bg-info class\n\nThe .bg-white class\n\nThe .bg-light class\n\nThe .bg-dark class",
+                              "View: It is the basic built-in component used to build UI of Mobile apps. The view is similar to the div in HTML. It is a content area where you can display your content.\n\nStates: It is used to control the components. The variable data can be stored in the state. It is mutable means a state can change the value at any time.\n\nProps: Props are used to pass data to the different components. It is immutable means props cannot change the value. It provides a connection between the container component and a presentation component.\n\nStyle: It is an essential component in the web or mobile, which makes the application attractive. React Native does not require any special language or syntax for styling. It can style the application using the JavaScript object.\n\nText: This component displays text in the app. It uses the basic component textInput to take text input from the user.\n\nScrollView: It is a scrolling container used to host multiple views. It can be used to render the large list or content in view with a scroll bar.",
                               style: TextStyle(fontSize: 20.0),
                             ),
                           ],
@@ -527,7 +233,7 @@ class Bootstrap extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "14. What are responsive utility classes in Bootstrap?",
+                            "6.What is JSX?",
                             style: TextStyle(
                                 fontSize: 20.0, fontWeight: FontWeight.bold),
                           ),
@@ -535,7 +241,7 @@ class Bootstrap extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "Responsive utility classes in Bootstrap are a set of classes that are used to conceal or exhibit the HTML elements based on screen resolution that discerns by media query in Bootstrap.\n\nExample: “hidden-md-down”",
+                            "JSX is a way for writing xml code along with javascript, known as javascript extension. It is used most of the time to create react native user interfaces.",
                             style: TextStyle(fontSize: 20.0),
                           ),
                         ],
@@ -564,7 +270,7 @@ class Bootstrap extends StatelessWidget {
                               height: size.height * 0.05,
                             ),
                             Text(
-                              "15. What are the different button styles in Bootstrap 4?",
+                              "7.  What are native apps?",
                               style: TextStyle(
                                   fontSize: 20.0, fontWeight: FontWeight.bold),
                             ),
@@ -572,7 +278,7 @@ class Bootstrap extends StatelessWidget {
                               height: size.height * 0.05,
                             ),
                             Text(
-                              "In Bootstrap 4, there are lots of styles that we can use with the buttons.\n\nSome of them are:\n\nButtons with colors\n\nButtons with a colored outline\n\nSmall buttons\n\nLarge buttons\n\nBlock-level buttons\n\nButton links",
+                              "Native mobile apps are the most common type of app.\n\nThey are built for specific platforms and are written in languages that the platform accepts. For example, Swift and Objective-C for native iOS apps and Java or Kotlin for native Android apps.\n\nNative apps are also built using the specific Integrated Development Environment (IDE) for the selected operating systems",
                               style: TextStyle(fontSize: 20.0),
                             ),
                           ],
@@ -589,6 +295,80 @@ class Bootstrap extends StatelessWidget {
                           border: Border.all(color: Colors.black)),
                     ),
                   ),
+                  //*****************************************
+                  Container(
+                    child: Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          SizedBox(
+                            height: size.height * 0.05,
+                          ),
+                          Text(
+                            "8. What is Render () in React Native?",
+                            style: TextStyle(
+                                fontSize: 20.0, fontWeight: FontWeight.bold),
+                          ),
+                          SizedBox(
+                            height: size.height * 0.05,
+                          ),
+                          Text(
+                            "It is mandatory for every react native component to have a render (). One single react element is returned by Render that is representation of native DOM component.",
+                            style: TextStyle(fontSize: 20.0),
+                          ),
+                        ],
+                      ),
+                    ),
+                    width: size.width * 0.9,
+                    // width: 200.0,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10.0),
+                        color: Colors.grey[200],
+                        boxShadow: [
+                          BoxShadow(color: Colors.black, blurRadius: 12.0)
+                        ],
+                        border: Border.all(color: Colors.black)),
+                  ),
+                  //*****************************************
+
+                  Container(
+                    child: Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          SizedBox(
+                            height: size.height * 0.05,
+                          ),
+                          Text(
+                            "9. What is networking? ",
+                            style: TextStyle(
+                                fontSize: 20.0, fontWeight: FontWeight.bold),
+                          ),
+                          SizedBox(
+                            height: size.height * 0.05,
+                          ),
+                          Text(
+                            "It provides Fetch Functions to request Http Requests to another server.",
+                            style: TextStyle(fontSize: 20.0),
+                          ),
+                        ],
+                      ),
+                    ),
+                    width: size.width * 0.9,
+                    // width: 200.0,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10.0),
+                        color: Colors.grey[200],
+                        boxShadow: [
+                          BoxShadow(color: Colors.black, blurRadius: 12.0)
+                        ],
+                        border: Border.all(color: Colors.black)),
+                  ),
+
                   //*****************************************
                   SingleChildScrollView(
                     child: Container(
@@ -602,7 +382,7 @@ class Bootstrap extends StatelessWidget {
                               height: size.height * 0.05,
                             ),
                             Text(
-                              "16. What are Bootstrap alerts?",
+                              "10.What are the advantages of native apps over hybrid apps?",
                               style: TextStyle(
                                   fontSize: 20.0, fontWeight: FontWeight.bold),
                             ),
@@ -610,7 +390,7 @@ class Bootstrap extends StatelessWidget {
                               height: size.height * 0.05,
                             ),
                             Text(
-                              "Bootstrap alerts are used to create presume alert messages, which add styles to make the messages more noticeable to the user.\n\nThe following contextual classes can be used to create colourful alerts:\n\nThe .alert-primary class\n\nThe .alert-secondary class\n\nThe .alert-success class\n\nThe .alert-danger class\n\nThe .alert-warning class\n\nThe .alert-info class\n\nThe .alert-light class\n\nThe .alert-dark class",
+                              "They work efficiently as they are built for that specific platforms.\n\nNative apps are responsive on all the platform-specific devices.\n\nThey are very fast and the best in the app performance.\n\nNative apps better integrate with mobile hardware.\n\nThey have interactive and intuitive User Interface (UI) and User Experience (UX) as per the user expectations based on specific platforms.\n\nSome of the Native mobile apps work even without the Internet connection.\n\nNative apps are secured and reliable.\n\nThey can easily access or utilize the other device-specific capabilities like GPS, Camera, Contacts, etc.",
                               style: TextStyle(fontSize: 20.0),
                             ),
                           ],
@@ -639,7 +419,7 @@ class Bootstrap extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "17. Define Bootstrap 4 thumbnails.",
+                            "11. What is React Native Apps?",
                             style: TextStyle(
                                 fontSize: 20.0, fontWeight: FontWeight.bold),
                           ),
@@ -647,7 +427,7 @@ class Bootstrap extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "It is a way to use the layout images, videos, text, etc. in a grid system. We can create thumbnails by adding a tag with the .img-thumbnail class around the image.",
+                            "React Native Apps are not web applications. These types of apps are running on mobile devices, and cannot load over the browser. Also, they are not hybrid apps that build over Ionic, Phonegap, etc. which can run over WebView component. They are the real native apps built in a single language JavaScript with the native components to run on mobile devices.",
                             style: TextStyle(fontSize: 20.0),
                           ),
                         ],
@@ -675,7 +455,7 @@ class Bootstrap extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "18. Explain the modal in Bootstrap4.",
+                            "12. Name at least one style property that can increase tappable area around an element.",
                             style: TextStyle(
                                 fontSize: 20.0, fontWeight: FontWeight.bold),
                           ),
@@ -683,7 +463,7 @@ class Bootstrap extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "A model is an inherited window that is layered over its parent window. This is used to augment the user experience and add different functionalities. Model windows are created with the help of the modal plugin.",
+                            "Padding (and also paddingVertical, ...Horizontal, ...Left, ...Right, ...Top, ...Bottom).\n\nminHeight and minWidth.\n\nhitSlop\n\nMake Tappleble areas larger.",
                             style: TextStyle(fontSize: 20.0),
                           ),
                         ],
@@ -711,7 +491,7 @@ class Bootstrap extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "19. Explain what Bootstrap’s collapsing elements is.",
+                            "13. What are components of Redux? ",
                             style: TextStyle(
                                 fontSize: 20.0, fontWeight: FontWeight.bold),
                           ),
@@ -719,7 +499,7 @@ class Bootstrap extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "It allows you to collapse any particular element without using any JavaScript code.\n\nTo use this feature in Bootstrap, you have to add data-toggle=” collapse” to the controller element along with a data target to automatically assign the control of a collapsible element. We can use this by writing .collapse(options) etc.",
+                            "Action\n\nReducer\n\nView\n\nStore",
                             style: TextStyle(fontSize: 20.0),
                           ),
                         ],
@@ -747,7 +527,7 @@ class Bootstrap extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "20.  What is well in Bootstrap 3?",
+                            "14.  Name a few companies that are built using React Native.",
                             style: TextStyle(
                                 fontSize: 20.0, fontWeight: FontWeight.bold),
                           ),
@@ -755,7 +535,7 @@ class Bootstrap extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "Bootstrap well is a form of container which thrives or makes the content look recessed on the web page. It also wraps the content using the .well class.",
+                            "Facebook, Airbnb, Instagram, Pinterest, Tesla, Uber, etc.",
                             style: TextStyle(fontSize: 20.0),
                           ),
                         ],
@@ -783,7 +563,7 @@ class Bootstrap extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "21. Explain the uses of the carousel plugin in Bootstrap.",
+                            "15. What is difference between React Component and React Element?",
                             style: TextStyle(
                                 fontSize: 20.0, fontWeight: FontWeight.bold),
                           ),
@@ -791,7 +571,7 @@ class Bootstrap extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "The carousel plugin in Bootstrap is used to make sliders on the web pages or your site. Several carousel plugins are used in Bootstrap to display large contents within a small space by adding sliders.\n\nExample:\n\n .carousel(options), .carousel(‘pause’), .carousel(cycle’), .carousel(‘prev’), .carousel(‘next’).",
+                            "React Component is either a class or a function which accepts input data, and returns React element. On the other hand, react element does not create react component, but instead it only displays its look.",
                             style: TextStyle(fontSize: 20.0),
                           ),
                         ],
@@ -819,7 +599,7 @@ class Bootstrap extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "22. How can we customize links to pagination?",
+                            "16. How to test if a node_modules would run on React Native? do you know which will run fine?",
                             style: TextStyle(
                                 fontSize: 20.0, fontWeight: FontWeight.bold),
                           ),
@@ -827,81 +607,7 @@ class Bootstrap extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "We can customize the links by using the .disabled class for unclickable links and the .active class for indicating the current page.",
-                            style: TextStyle(fontSize: 20.0),
-                          ),
-                        ],
-                      ),
-                    ),
-                    width: size.width * 0.9,
-                    // width: 200.0,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10.0),
-                        color: Colors.grey[200],
-                        boxShadow: [
-                          BoxShadow(color: Colors.black, blurRadius: 12.0)
-                        ],
-                        border: Border.all(color: Colors.black)),
-                  ),
-                  //*****************************************
-                  SingleChildScrollView(
-                    child: Container(
-                      child: Padding(
-                        padding: const EdgeInsets.all(12.0),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            SizedBox(
-                              height: size.height * 0.05,
-                            ),
-                            Text(
-                              "23. Explain input groups in Bootstrap4.",
-                              style: TextStyle(
-                                  fontSize: 20.0, fontWeight: FontWeight.bold),
-                            ),
-                            SizedBox(
-                              height: size.height * 0.05,
-                            ),
-                            Text(
-                              "Input group is put out from controls.\n\nInput group is put out from controls.\n\nWe can prepend and append addons elements to a .form-control in front of or behind text inputs by using the .input-group-prepend class and the .input-group-append class respectively. Further, you can use the .input-group-sm class to make a small input group and the .input-group-lg class to make a large input group.",
-                              style: TextStyle(fontSize: 20.0),
-                            ),
-                          ],
-                        ),
-                      ),
-                      width: size.width * 0.9,
-                      // width: 200.0,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10.0),
-                          color: Colors.grey[200],
-                          boxShadow: [
-                            BoxShadow(color: Colors.black, blurRadius: 12.0)
-                          ],
-                          border: Border.all(color: Colors.black)),
-                    ),
-                  ),
-                  //*****************************************
-                  Container(
-                    child: Padding(
-                      padding: const EdgeInsets.all(12.0),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "24. How can you create a tabbed navigation menu?",
-                            style: TextStyle(
-                                fontSize: 20.0, fontWeight: FontWeight.bold),
-                          ),
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "We can create a tabbed navigation menu by making a basic unordered list with the .nav base class and the .nav-tabs class.",
+                            "All node_modules, as any real javascript library, would run fine if they don’t rely upon Node.js run-time modules or web-specific intentions. There is no defined way to test the compatibility of any node_modules.",
                             style: TextStyle(fontSize: 20.0),
                           ),
                         ],
@@ -929,7 +635,7 @@ class Bootstrap extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "25. How can you create a pills navigation menu?",
+                            "17. What are best UI Components for React Native?",
                             style: TextStyle(
                                 fontSize: 20.0, fontWeight: FontWeight.bold),
                           ),
@@ -937,7 +643,7 @@ class Bootstrap extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "Answer: A pills navigation menu can be created by making an unordered list with the base class of .nav the .nav-pills class.",
+                            "Material UI\n\nReact Bootstrap\n\nSemantic UI\n\nReact Toolbox\n\nAnt Design",
                             style: TextStyle(fontSize: 20.0),
                           ),
                         ],
@@ -965,7 +671,7 @@ class Bootstrap extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "26. Explain briefly how a navbar works.",
+                            "18. What is the difference between React Js and React Native",
                             style: TextStyle(
                                 fontSize: 20.0, fontWeight: FontWeight.bold),
                           ),
@@ -973,7 +679,7 @@ class Bootstrap extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "A navbar is an eminent feature to make a responsive meta component that works as navigation headers for your application and site. In the mobile view, the navbar collapses and becomes horizontal as the available viewport width increases.",
+                            "React Js: ReactJs is a JavaScript Library used for developing apps in HTML5 using JavaScript as the developing language.\n\nReact Native: React Native is used to develop native mobile apps using JavaScript as the development language.",
                             style: TextStyle(fontSize: 20.0),
                           ),
                         ],
@@ -1001,7 +707,7 @@ class Bootstrap extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "27. What are the two methods of creating a navbar in Bootstrap 4?",
+                            "19.What is the storage system in React Native?",
                             style: TextStyle(
                                 fontSize: 20.0, fontWeight: FontWeight.bold),
                           ),
@@ -1009,7 +715,7 @@ class Bootstrap extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "We can create a navbar using the following two methods:\n\nUsing an <ul> element and <li> elements\n\nWithout using the <ul> and <li> elements",
+                            "React Native uses AsyncStorage class to store data in key-value pair which is global to all app.",
                             style: TextStyle(fontSize: 20.0),
                           ),
                         ],
@@ -1037,7 +743,7 @@ class Bootstrap extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "28.  What is breadcrumb?",
+                            "20. What are navigators?",
                             style: TextStyle(
                                 fontSize: 20.0, fontWeight: FontWeight.bold),
                           ),
@@ -1045,475 +751,7 @@ class Bootstrap extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "Breadcrumb is an efficient way to show hierarchy-based information for a site. This can show the information like published date, categories or tags in a blog, etc. It may also tell the user about the current page location within a navigational hierarchy.\n\nWe can use the .breadcrumb class to create a breadcrumb.",
-                            style: TextStyle(fontSize: 20.0),
-                          ),
-                        ],
-                      ),
-                    ),
-                    width: size.width * 0.9,
-                    // width: 200.0,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10.0),
-                        color: Colors.grey[200],
-                        boxShadow: [
-                          BoxShadow(color: Colors.black, blurRadius: 12.0)
-                        ],
-                        border: Border.all(color: Colors.black)),
-                  ),
-                  //*****************************************
-                  Container(
-                    child: Padding(
-                      padding: const EdgeInsets.all(12.0),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "29. What are labels?",
-                            style: TextStyle(
-                                fontSize: 20.0, fontWeight: FontWeight.bold),
-                          ),
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            " Labels are used for offering counts, tips, or other things to provide markup on web pages. We use the <label> tag to indicate labels.",
-                            style: TextStyle(fontSize: 20.0),
-                          ),
-                        ],
-                      ),
-                    ),
-                    width: size.width * 0.9,
-                    // width: 200.0,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10.0),
-                        color: Colors.grey[200],
-                        boxShadow: [
-                          BoxShadow(color: Colors.black, blurRadius: 12.0)
-                        ],
-                        border: Border.all(color: Colors.black)),
-                  ),
-                  //*****************************************
-                  Container(
-                    child: Padding(
-                      padding: const EdgeInsets.all(12.0),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "30.  What are badges in Bootstrap4?",
-                            style: TextStyle(
-                                fontSize: 20.0, fontWeight: FontWeight.bold),
-                          ),
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "Badges are small count and labelling components. We use the .badge class and a contextual class (.badge-*) to create a badge.",
-                            style: TextStyle(fontSize: 20.0),
-                          ),
-                        ],
-                      ),
-                    ),
-                    width: size.width * 0.9,
-                    // width: 200.0,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10.0),
-                        color: Colors.grey[200],
-                        boxShadow: [
-                          BoxShadow(color: Colors.black, blurRadius: 12.0)
-                        ],
-                        border: Border.all(color: Colors.black)),
-                  ),
-                  //*****************************************
-                  Container(
-                    child: Padding(
-                      padding: const EdgeInsets.all(12.0),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "31. What is the function of a jumbotron in Bootstrap 4?",
-                            style: TextStyle(
-                                fontSize: 20.0, fontWeight: FontWeight.bold),
-                          ),
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "It is used to increase the size of headings and to add more margin for landing page content. To create a jumbotron we have to create a container <div> element with the .jumbotron class.",
-                            style: TextStyle(fontSize: 20.0),
-                          ),
-                        ],
-                      ),
-                    ),
-                    width: size.width * 0.9,
-                    // width: 200.0,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10.0),
-                        color: Colors.grey[200],
-                        boxShadow: [
-                          BoxShadow(color: Colors.black, blurRadius: 12.0)
-                        ],
-                        border: Border.all(color: Colors.black)),
-                  ),
-                  //*****************************************
-                  Container(
-                    child: Padding(
-                      padding: const EdgeInsets.all(12.0),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "32. How can we make an image responsive in Bootstrap4?",
-                            style: TextStyle(
-                                fontSize: 20.0, fontWeight: FontWeight.bold),
-                          ),
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "Add the .img-fluid class to the <img> tag to make an image responsive. It applies the styles, .max-width: 100% and height: auto. So it can match nicely with the parent element.",
-                            style: TextStyle(fontSize: 20.0),
-                          ),
-                        ],
-                      ),
-                    ),
-                    width: size.width * 0.9,
-                    // width: 200.0,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10.0),
-                        color: Colors.grey[200],
-                        boxShadow: [
-                          BoxShadow(color: Colors.black, blurRadius: 12.0)
-                        ],
-                        border: Border.all(color: Colors.black)),
-                  ),
-                  //*****************************************
-                  Container(
-                    child: Padding(
-                      padding: const EdgeInsets.all(12.0),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "33. What do you mean by normalize in Bootstrap?",
-                            style: TextStyle(
-                                fontSize: 20.0, fontWeight: FontWeight.bold),
-                          ),
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "Bootstrap normalize is a small CSS file that is used to make cross-browser consistency.",
-                            style: TextStyle(fontSize: 20.0),
-                          ),
-                        ],
-                      ),
-                    ),
-                    width: size.width * 0.9,
-                    // width: 200.0,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10.0),
-                        color: Colors.grey[200],
-                        boxShadow: [
-                          BoxShadow(color: Colors.black, blurRadius: 12.0)
-                        ],
-                        border: Border.all(color: Colors.black)),
-                  ),
-                  //*****************************************
-                  Container(
-                    child: Padding(
-                      padding: const EdgeInsets.all(12.0),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "34.  What is lead?",
-                            style: TextStyle(
-                                fontSize: 20.0, fontWeight: FontWeight.bold),
-                          ),
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "Lead makes a paragraph stand out. The .lead class is used for this purpose and it enlarges the font and taller increases the line-height as well.",
-                            style: TextStyle(fontSize: 20.0),
-                          ),
-                        ],
-                      ),
-                    ),
-                    width: size.width * 0.9,
-                    // width: 200.0,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10.0),
-                        color: Colors.grey[200],
-                        boxShadow: [
-                          BoxShadow(color: Colors.black, blurRadius: 12.0)
-                        ],
-                        border: Border.all(color: Colors.black)),
-                  ),
-                  //*****************************************
-                  Container(
-                    child: Padding(
-                      padding: const EdgeInsets.all(12.0),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "35. What are panels in Bootstrap 3?",
-                            style: TextStyle(
-                                fontSize: 20.0, fontWeight: FontWeight.bold),
-                          ),
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "Panels are components that are used when you want to put your DOM component in a box. So, to retrieve a basic panel, we just need to add the .panel class to the <div> element. We can also add the .panel-default class to this element.",
-                            style: TextStyle(fontSize: 20.0),
-                          ),
-                        ],
-                      ),
-                    ),
-                    width: size.width * 0.9,
-                    // width: 200.0,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10.0),
-                        color: Colors.grey[200],
-                        boxShadow: [
-                          BoxShadow(color: Colors.black, blurRadius: 12.0)
-                        ],
-                        border: Border.all(color: Colors.black)),
-                  ),
-                  //*****************************************
-                  Container(
-                    child: Padding(
-                      padding: const EdgeInsets.all(12.0),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "36. How will you create a Bootstrap 3 panel with headings?",
-                            style: TextStyle(
-                                fontSize: 20.0, fontWeight: FontWeight.bold),
-                          ),
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "There are two ways to add panel headings:\n\nThe first method is directly using the .panel-heading class to add heading containers in a panel.\n\nsecond method is by using any heading tag from <h1> to <h6> with the .panel-title class to add more styles to the headings.",
-                            style: TextStyle(fontSize: 20.0),
-                          ),
-                        ],
-                      ),
-                    ),
-                    width: size.width * 0.9,
-                    // width: 200.0,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10.0),
-                        color: Colors.grey[200],
-                        boxShadow: [
-                          BoxShadow(color: Colors.black, blurRadius: 12.0)
-                        ],
-                        border: Border.all(color: Colors.black)),
-                  ),
-                  //*****************************************
-                  Container(
-                    child: Padding(
-                      padding: const EdgeInsets.all(12.0),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "37. What is a scrollspy in Bootstrap?",
-                            style: TextStyle(
-                                fontSize: 20.0, fontWeight: FontWeight.bold),
-                          ),
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "It is an auto-updating nav component that allows in fetching section of the page based on the scroll position. The .active class will update accordingly from one nav item to another based on the scroll position.",
-                            style: TextStyle(fontSize: 20.0),
-                          ),
-                        ],
-                      ),
-                    ),
-                    width: size.width * 0.9,
-                    // width: 200.0,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10.0),
-                        color: Colors.grey[200],
-                        boxShadow: [
-                          BoxShadow(color: Colors.black, blurRadius: 12.0)
-                        ],
-                        border: Border.all(color: Colors.black)),
-                  ),
-                  //*****************************************
-                  Container(
-                    child: Padding(
-                      padding: const EdgeInsets.all(12.0),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "38. What is the function of the affix plugin in Bootstrap 3?",
-                            style: TextStyle(
-                                fontSize: 20.0, fontWeight: FontWeight.bold),
-                          ),
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            " Affix is a jQuery plugin. It allows <div> element to be attached to a location on the page.\n\nExample:\n\nUse of the social icon on a page. The icons will start in a location, but when the page hits on a certain mark, it will block the <div> element in place and will stop the scrolling for the rest of the page.",
-                            style: TextStyle(fontSize: 20.0),
-                          ),
-                        ],
-                      ),
-                    ),
-                    width: size.width * 0.9,
-                    // width: 200.0,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10.0),
-                        color: Colors.grey[200],
-                        boxShadow: [
-                          BoxShadow(color: Colors.black, blurRadius: 12.0)
-                        ],
-                        border: Border.all(color: Colors.black)),
-                  ),
-                  //*****************************************
-                  Container(
-                    child: Padding(
-                      padding: const EdgeInsets.all(12.0),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "39. What is the purpose of the grid system?",
-                            style: TextStyle(
-                                fontSize: 20.0, fontWeight: FontWeight.bold),
-                          ),
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "By using the grid system, we can make up to 12 columns across a page. Different classes have been defined for this purpose.",
-                            style: TextStyle(fontSize: 20.0),
-                          ),
-                        ],
-                      ),
-                    ),
-                    width: size.width * 0.9,
-                    // width: 200.0,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10.0),
-                        color: Colors.grey[200],
-                        boxShadow: [
-                          BoxShadow(color: Colors.black, blurRadius: 12.0)
-                        ],
-                        border: Border.all(color: Colors.black)),
-                  ),
-                  //*****************************************
-                  Container(
-                    child: Padding(
-                      padding: const EdgeInsets.all(12.0),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "40. What are grid classes in Bootstrap 4?",
-                            style: TextStyle(
-                                fontSize: 20.0, fontWeight: FontWeight.bold),
-                          ),
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "There are five grid classes in Bootstrap.\n\n.col-*\n\n.col-sm-*\n\n.col-md-*\n\n.col-lg-*\n\n.col-xl-*",
-                            style: TextStyle(fontSize: 20.0),
-                          ),
-                        ],
-                      ),
-                    ),
-                    width: size.width * 0.9,
-                    // width: 200.0,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10.0),
-                        color: Colors.grey[200],
-                        boxShadow: [
-                          BoxShadow(color: Colors.black, blurRadius: 12.0)
-                        ],
-                        border: Border.all(color: Colors.black)),
-                  ),
-                  //*****************************************
-                  Container(
-                    child: Padding(
-                      padding: const EdgeInsets.all(12.0),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "41. What are the global styles that are used in Bootstrap 4 default typography?",
-                            style: TextStyle(
-                                fontSize: 20.0, fontWeight: FontWeight.bold),
-                          ),
-                          SizedBox(
-                            height: size.height * 0.05,
-                          ),
-                          Text(
-                            "Font family – Native font stack\n\nFont size – Default root font size of the browser that is usually 16px\n\nLine height – 1.5",
+                            "These are used to change from one scene to another scene.",
                             style: TextStyle(fontSize: 20.0),
                           ),
                         ],
@@ -1542,7 +780,7 @@ class Bootstrap extends StatelessWidget {
                               height: size.height * 0.05,
                             ),
                             Text(
-                              '42. What will be the output of the below code?\n\n<div class="row">\n\n<div class="col-6 col-md-4">A</div>\n\n<div class="col-6 col-md-4">B</div>\n\n<div class="col-6 col-md-4">C</div>\n\n</div>',
+                              "21. What is React Native?",
                               style: TextStyle(
                                   fontSize: 20.0, fontWeight: FontWeight.bold),
                             ),
@@ -1550,7 +788,7 @@ class Bootstrap extends StatelessWidget {
                               height: size.height * 0.05,
                             ),
                             Text(
-                              "According to the above code segment, the columns start at 50% of width on mobile devices and reduce up to 33.3% of width on desktop devices.",
+                              "React Native is a mobile app development framework that enables the development of multi-platform Android and iOS apps using native UI elements.\n\nIt is based on the JavaScriptCore runtime and Babel transformers.\n\nThis famous framework for mobile app development started in the summer of 2013 as Facebook’s internal hackathon project.",
                               style: TextStyle(fontSize: 20.0),
                             ),
                           ],
@@ -1568,6 +806,7 @@ class Bootstrap extends StatelessWidget {
                     ),
                   ),
                   //*****************************************
+
                   Container(
                     child: Padding(
                       padding: const EdgeInsets.all(12.0),
@@ -1579,7 +818,7 @@ class Bootstrap extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "43. What are the dependencies required to work Bootstrap properly?",
+                            "22. Tell us some options of storing persisting data in a react native app.",
                             style: TextStyle(
                                 fontSize: 20.0, fontWeight: FontWeight.bold),
                           ),
@@ -1587,7 +826,7 @@ class Bootstrap extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "jQuery is the only dependency required to work Bootstrap properly.",
+                            "Async Storage ('built-in' to React Native)\n\nSQLite\n\nRealm\n\nFirebase\n\nMongoDB",
                             style: TextStyle(fontSize: 20.0),
                           ),
                         ],
@@ -1615,7 +854,7 @@ class Bootstrap extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            '44. Explain the function of the following code segment.\n\n<a href="#">Home <span class="badge badge-primary">36</span></a>',
+                            "23. What is Scrollview?",
                             style: TextStyle(
                                 fontSize: 20.0, fontWeight: FontWeight.bold),
                           ),
@@ -1623,7 +862,7 @@ class Bootstrap extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            'This code will produce a link with an inline badge which will give an important notification to the user like number received, messages received, or the number of requests, etc. Further, the .badge-primary class will add a blue color to the badge.',
+                            "It helps in viewing the large content using a scrollbar.",
                             style: TextStyle(fontSize: 20.0),
                           ),
                         ],
@@ -1651,7 +890,7 @@ class Bootstrap extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "45. What is a toast and what are the main components of a toast?",
+                            "24. What is props in React Native?",
                             style: TextStyle(
                                 fontSize: 20.0, fontWeight: FontWeight.bold),
                           ),
@@ -1659,7 +898,7 @@ class Bootstrap extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "It is like an alert box that appears for a small time. The main components of a toast are the toast header and the toast body.",
+                            "Props are parameters which are used to customise a component at the time of creation and on re-render. Props are like arguments passed to a React component.",
                             style: TextStyle(fontSize: 20.0),
                           ),
                         ],
@@ -1687,7 +926,7 @@ class Bootstrap extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "46. What is the function of the transition plugin in Bootstrap?",
+                            "25.Can we combine native ios or android code in React Native?",
                             style: TextStyle(
                                 fontSize: 20.0, fontWeight: FontWeight.bold),
                           ),
@@ -1695,7 +934,7 @@ class Bootstrap extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "It provides simple transition effects like sliding or fading in modals.",
+                            "Yes. iOS and Android can be combined in React Native.",
                             style: TextStyle(fontSize: 20.0),
                           ),
                         ],
@@ -1723,7 +962,7 @@ class Bootstrap extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "47. Explain the concept of creating a basic form in Bootstrap.",
+                            "26.  What is the use of XHR module in React Native?",
                             style: TextStyle(
                                 fontSize: 20.0, fontWeight: FontWeight.bold),
                           ),
@@ -1731,7 +970,7 @@ class Bootstrap extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "First, add a <form> element. Then, inside the form element, wrap labels and controls in a <div> element with the .form-group class. Next, the .form-control class to text input elements like <input>, <textarea> and <select> elements.",
+                            "XHR HttpRequest is an API, which is utilized for implementation of HttpRequest in order to post data on a server.",
                             style: TextStyle(fontSize: 20.0),
                           ),
                         ],
@@ -1760,7 +999,7 @@ class Bootstrap extends StatelessWidget {
                               height: size.height * 0.05,
                             ),
                             Text(
-                              "48. What are the different options for adding Bootstrap to your project?",
+                              "27. How does React Native deals with a variety of screen sizes?",
                               style: TextStyle(
                                   fontSize: 20.0, fontWeight: FontWeight.bold),
                             ),
@@ -1768,7 +1007,7 @@ class Bootstrap extends StatelessWidget {
                               height: size.height * 0.05,
                             ),
                             Text(
-                              "There are several options to add Bootstrap to your project.\n\nUsing ready-to-use compiled CSS and JS code.\n\nUsing source files.\n\nInstalling via Bootstrap CDN.\n\nInstalling via package managers such as NPM, Yarn, RubyGems, Composer, etc.",
+                              "Flexbox provides uniform layout on screen with different sizes using its three properties: justify-content, flex-direction, alignItems.\n\nDimensions can style the page accurately on screen with different sizes.\n\nPixel ratio class can be utilized to access the pixel density of the device and render the image accordingly.\n\nThe aspect ratio sets the height.\n\nScrollview, a scrolling container that contains multiple components and can be scrolled both vertically and horizontally.",
                               style: TextStyle(fontSize: 20.0),
                             ),
                           ],
@@ -1797,7 +1036,7 @@ class Bootstrap extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "49. Can we learn Bootstrap without learning CSS?",
+                            "28. What are animations? How will they work in React Native?",
                             style: TextStyle(
                                 fontSize: 20.0, fontWeight: FontWeight.bold),
                           ),
@@ -1805,7 +1044,81 @@ class Bootstrap extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "The simple answer is no. We cannot learn it without learning CSS as it is a CSS framework. Therefore, knowledge of CSS is essential to understand the basic concepts of Bootstrap.",
+                            "Animations are manipulative images or objects that appear as moving objects. We can use animations with React Native API, Animated.decay, Animated.parallel and Animated.stagger.",
+                            style: TextStyle(fontSize: 20.0),
+                          ),
+                        ],
+                      ),
+                    ),
+                    width: size.width * 0.9,
+                    // width: 200.0,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10.0),
+                        color: Colors.grey[200],
+                        boxShadow: [
+                          BoxShadow(color: Colors.black, blurRadius: 12.0)
+                        ],
+                        border: Border.all(color: Colors.black)),
+                  ),
+                  //*****************************************
+                  SingleChildScrollView(
+                    child: Container(
+                      child: Padding(
+                        padding: const EdgeInsets.all(12.0),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            SizedBox(
+                              height: size.height * 0.05,
+                            ),
+                            Text(
+                              "29. How is React Native different from other frameworks for developing a mobile application?",
+                              style: TextStyle(
+                                  fontSize: 20.0, fontWeight: FontWeight.bold),
+                            ),
+                            SizedBox(
+                              height: size.height * 0.05,
+                            ),
+                            Text(
+                              "React Native app is a real mobile app, not a web app running inside a mobile app shell. Other alternative like Cordova, ionic run a web app in a web view.\n\nReact Native app is converted into machine code which runs on mobile that is why it gives better performance than other alternatives.\n\nReact Native mobile apps are more close to Native app development in comparison to other Javascript frameworks\n\nMobile application built with React native has small bundle size in comparison to older hybrid application development framework.",
+                              style: TextStyle(fontSize: 20.0),
+                            ),
+                          ],
+                        ),
+                      ),
+                      width: size.width * 0.9,
+                      // width: 200.0,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10.0),
+                          color: Colors.grey[200],
+                          boxShadow: [
+                            BoxShadow(color: Colors.black, blurRadius: 12.0)
+                          ],
+                          border: Border.all(color: Colors.black)),
+                    ),
+                  ),
+                  //*****************************************
+                  Container(
+                    child: Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          SizedBox(
+                            height: size.height * 0.05,
+                          ),
+                          Text(
+                            "30. Is there browser IDE for react native?",
+                            style: TextStyle(
+                                fontSize: 20.0, fontWeight: FontWeight.bold),
+                          ),
+                          SizedBox(
+                            height: size.height * 0.05,
+                          ),
+                          Text(
+                            "Yes, there are Browser IDE for React Native.",
                             style: TextStyle(fontSize: 20.0),
                           ),
                         ],
@@ -1833,7 +1146,7 @@ class Bootstrap extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            "50. Is there any relationship between Bootstrap and JavaScript?",
+                            "31. What is Flex?",
                             style: TextStyle(
                                 fontSize: 20.0, fontWeight: FontWeight.bold),
                           ),
@@ -1841,7 +1154,698 @@ class Bootstrap extends StatelessWidget {
                             height: size.height * 0.05,
                           ),
                           Text(
-                            " Yes, there is a relationship between the two technologies. Some Bootstrap components require JavaScript to work properly.",
+                            "Flex or flex boxing is a technique to distribute different components in react native apps. You can distributes react native views horizontally, vertically, provide space in between or space around.",
+                            style: TextStyle(fontSize: 20.0),
+                          ),
+                        ],
+                      ),
+                    ),
+                    width: size.width * 0.9,
+                    // width: 200.0,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10.0),
+                        color: Colors.grey[200],
+                        boxShadow: [
+                          BoxShadow(color: Colors.black, blurRadius: 12.0)
+                        ],
+                        border: Border.all(color: Colors.black)),
+                  ),
+                  //*****************************************
+                  Container(
+                    child: Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          SizedBox(
+                            height: size.height * 0.05,
+                          ),
+                          Text(
+                            "32. What determines the size of a component and what are the ways?",
+                            style: TextStyle(
+                                fontSize: 20.0, fontWeight: FontWeight.bold),
+                          ),
+                          SizedBox(
+                            height: size.height * 0.05,
+                          ),
+                          Text(
+                            "The height and width determine the size of component on the screen. Two different ways to set height and width.\n\nFixed Dimensions\n\nFlex Dimensions",
+                            style: TextStyle(fontSize: 20.0),
+                          ),
+                        ],
+                      ),
+                    ),
+                    width: size.width * 0.9,
+                    // width: 200.0,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10.0),
+                        color: Colors.grey[200],
+                        boxShadow: [
+                          BoxShadow(color: Colors.black, blurRadius: 12.0)
+                        ],
+                        border: Border.all(color: Colors.black)),
+                  ),
+                  //*****************************************
+                  Container(
+                    child: Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          SizedBox(
+                            height: size.height * 0.05,
+                          ),
+                          Text(
+                            "33. What is Render?",
+                            style: TextStyle(
+                                fontSize: 20.0, fontWeight: FontWeight.bold),
+                          ),
+                          SizedBox(
+                            height: size.height * 0.05,
+                          ),
+                          Text(
+                            "Render Props is a technique in which react components are transformed into DOM nodes which are understood by the browser.",
+                            style: TextStyle(fontSize: 20.0),
+                          ),
+                        ],
+                      ),
+                    ),
+                    width: size.width * 0.9,
+                    // width: 200.0,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10.0),
+                        color: Colors.grey[200],
+                        boxShadow: [
+                          BoxShadow(color: Colors.black, blurRadius: 12.0)
+                        ],
+                        border: Border.all(color: Colors.black)),
+                  ),
+                  //*****************************************
+                  Container(
+                    child: Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          SizedBox(
+                            height: size.height * 0.05,
+                          ),
+                          Text(
+                            "34. Will react native support html?",
+                            style: TextStyle(
+                                fontSize: 20.0, fontWeight: FontWeight.bold),
+                          ),
+                          SizedBox(
+                            height: size.height * 0.05,
+                          ),
+                          Text(
+                            "React Native does not support HTML.",
+                            style: TextStyle(fontSize: 20.0),
+                          ),
+                        ],
+                      ),
+                    ),
+                    width: size.width * 0.9,
+                    // width: 200.0,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10.0),
+                        color: Colors.grey[200],
+                        boxShadow: [
+                          BoxShadow(color: Colors.black, blurRadius: 12.0)
+                        ],
+                        border: Border.all(color: Colors.black)),
+                  ),
+                  //*****************************************
+                  SingleChildScrollView(
+                    child: Container(
+                      child: Padding(
+                        padding: const EdgeInsets.all(12.0),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            SizedBox(
+                              height: size.height * 0.05,
+                            ),
+                            Text(
+                              "35. What are the disadvantages of using React Native?",
+                              style: TextStyle(
+                                  fontSize: 20.0, fontWeight: FontWeight.bold),
+                            ),
+                            SizedBox(
+                              height: size.height * 0.05,
+                            ),
+                            Text(
+                              "React Native is still new and immature: React Native is a new framework in Windows, Android, and iOS programming languages. It is still in the improvement stage, which can have a negative impact on the apps.\n\nLearning is tough: React Native cannot learn quickly, especially for a fresher in the app development field.\n\nIt Lacks the Security Robustness: React Native is an open-source JavaScript framework, which is fragile and creates a gap in the security robustness. When you are creating banking and financial apps where data is highly confidential, experts advise not to choose React Native.\n\nIt Takes More Time to Initialize: React Native takes a lot of time for initializing the runtime even if you are using the hi-tech gadgets and devices.\n\nExistence is Uncertain: As Facebook develop this framework, its presence is uncertain since it keeps all the rights to kill off the project anytime. As the popularity of React Native rises, it is unlikely to happen.",
+                              style: TextStyle(fontSize: 20.0),
+                            ),
+                          ],
+                        ),
+                      ),
+                      width: size.width * 0.9,
+                      // width: 200.0,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10.0),
+                          color: Colors.grey[200],
+                          boxShadow: [
+                            BoxShadow(color: Colors.black, blurRadius: 12.0)
+                          ],
+                          border: Border.all(color: Colors.black)),
+                    ),
+                  ),
+                  //*****************************************
+                  Container(
+                    child: Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          SizedBox(
+                            height: size.height * 0.05,
+                          ),
+                          Text(
+                            "36. What is Cross platform application development?",
+                            style: TextStyle(
+                                fontSize: 20.0, fontWeight: FontWeight.bold),
+                          ),
+                          SizedBox(
+                            height: size.height * 0.05,
+                          ),
+                          Text(
+                            "Cross Platform Application Development is a platform for creating different software which are supported by multiple mobile operating systems.",
+                            style: TextStyle(fontSize: 20.0),
+                          ),
+                        ],
+                      ),
+                    ),
+                    width: size.width * 0.9,
+                    // width: 200.0,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10.0),
+                        color: Colors.grey[200],
+                        boxShadow: [
+                          BoxShadow(color: Colors.black, blurRadius: 12.0)
+                        ],
+                        border: Border.all(color: Colors.black)),
+                  ),
+                  //*****************************************
+                  Container(
+                    child: Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          SizedBox(
+                            height: size.height * 0.05,
+                          ),
+                          Text(
+                            "37. Why does React Native use Redux?",
+                            style: TextStyle(
+                                fontSize: 20.0, fontWeight: FontWeight.bold),
+                          ),
+                          SizedBox(
+                            height: size.height * 0.05,
+                          ),
+                          Text(
+                            "Redux is a standalone state management library that React Native use to simplify data flow within an app.",
+                            style: TextStyle(fontSize: 20.0),
+                          ),
+                        ],
+                      ),
+                    ),
+                    width: size.width * 0.9,
+                    // width: 200.0,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10.0),
+                        color: Colors.grey[200],
+                        boxShadow: [
+                          BoxShadow(color: Colors.black, blurRadius: 12.0)
+                        ],
+                        border: Border.all(color: Colors.black)),
+                  ),
+                  //*****************************************
+                  Container(
+                    child: Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          SizedBox(
+                            height: size.height * 0.05,
+                          ),
+                          Text(
+                            "38. How does React Native load data on Server?",
+                            style: TextStyle(
+                                fontSize: 20.0, fontWeight: FontWeight.bold),
+                          ),
+                          SizedBox(
+                            height: size.height * 0.05,
+                          ),
+                          Text(
+                            "React Native consumes Fetch API to load data on the Server when needed.",
+                            style: TextStyle(fontSize: 20.0),
+                          ),
+                        ],
+                      ),
+                    ),
+                    width: size.width * 0.9,
+                    // width: 200.0,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10.0),
+                        color: Colors.grey[200],
+                        boxShadow: [
+                          BoxShadow(color: Colors.black, blurRadius: 12.0)
+                        ],
+                        border: Border.all(color: Colors.black)),
+                  ),
+                  //*****************************************
+                  Container(
+                    child: Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          SizedBox(
+                            height: size.height * 0.05,
+                          ),
+                          Text(
+                            "39. How can you improve the performance (load speed, rendering quality) of images? ",
+                            style: TextStyle(
+                                fontSize: 20.0, fontWeight: FontWeight.bold),
+                          ),
+                          SizedBox(
+                            height: size.height * 0.05,
+                          ),
+                          Text(
+                            "Server-side compression\n\nThird-party tools such as Cloudinary\n\nImage caching",
+                            style: TextStyle(fontSize: 20.0),
+                          ),
+                        ],
+                      ),
+                    ),
+                    width: size.width * 0.9,
+                    // width: 200.0,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10.0),
+                        color: Colors.grey[200],
+                        boxShadow: [
+                          BoxShadow(color: Colors.black, blurRadius: 12.0)
+                        ],
+                        border: Border.all(color: Colors.black)),
+                  ),
+                  //*****************************************
+                  SingleChildScrollView(
+                    child: Container(
+                      child: Padding(
+                        padding: const EdgeInsets.all(12.0),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            SizedBox(
+                              height: size.height * 0.05,
+                            ),
+                            Text(
+                              "40. What are the advantages of using React Native?",
+                              style: TextStyle(
+                                  fontSize: 20.0, fontWeight: FontWeight.bold),
+                            ),
+                            SizedBox(
+                              height: size.height * 0.05,
+                            ),
+                            Text(
+                              'Cross-Platform: It offers the facility to "Write once and run everywhere." It is used to create apps for Android, iOS, and Windows platforms.\n\nPerformance: The code written in React Native is compiled into native code, which enables it for all operating systems to provide closer native appearance and functions in the same way on all platforms.\n\nCommunity: React Native provides a large community of passionate developers who are always ready to help us to fix bugs, and issues occur at any instant.\n\nHot Reloading: Making a few changes in your apps code immediately visible during development. If the business logic is changed, its reflection is live reloaded on screen.\n\nFaster Development: React Native helps to develop apps fast. It uses a common language to build an app for Android, iOS, and Windows platforms, which gives speedier app deployment, delivery, and quicker time-to-market.\n\nJavaScript: JavaScript knowledge is used to build native mobile apps.',
+                              style: TextStyle(fontSize: 20.0),
+                            ),
+                          ],
+                        ),
+                      ),
+                      width: size.width * 0.9,
+                      // width: 200.0,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10.0),
+                          color: Colors.grey[200],
+                          boxShadow: [
+                            BoxShadow(color: Colors.black, blurRadius: 12.0)
+                          ],
+                          border: Border.all(color: Colors.black)),
+                    ),
+                  ),
+                  //*****************************************
+                  Container(
+                    child: Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          SizedBox(
+                            height: size.height * 0.05,
+                          ),
+                          Text(
+                            "41. What are hybrid apps?",
+                            style: TextStyle(
+                                fontSize: 20.0, fontWeight: FontWeight.bold),
+                          ),
+                          SizedBox(
+                            height: size.height * 0.05,
+                          ),
+                          Text(
+                            "Hybrid mobile apps are applications that are installed on a device, just like any other app.\n\nHybrid apps are deployed in a native container that uses a mobile WebView object. When the app is used, this object displays web content thanks to the use of web technologies (CSS, JavaScript, HTML).",
+                            style: TextStyle(fontSize: 20.0),
+                          ),
+                        ],
+                      ),
+                    ),
+                    width: size.width * 0.9,
+                    // width: 200.0,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10.0),
+                        color: Colors.grey[200],
+                        boxShadow: [
+                          BoxShadow(color: Colors.black, blurRadius: 12.0)
+                        ],
+                        border: Border.all(color: Colors.black)),
+                  ),
+                  //*****************************************
+                  SingleChildScrollView(
+                    child: Container(
+                      child: Padding(
+                        padding: const EdgeInsets.all(12.0),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            SizedBox(
+                              height: size.height * 0.05,
+                            ),
+                            Text(
+                              "42. How do you run a React Native app on Android?",
+                              style: TextStyle(
+                                  fontSize: 20.0, fontWeight: FontWeight.bold),
+                            ),
+                            SizedBox(
+                              height: size.height * 0.05,
+                            ),
+                            Text(
+                              "First, enable the USB Debugging option inside the Developer Options.\n\nPlug the device via USB to the development machine.\n\nRun adb devices command to check that the device is correctly connected to ADB\n\nNow install and launch your app by using the below-given command: \$ react-native run-android",
+                              style: TextStyle(fontSize: 20.0),
+                            ),
+                          ],
+                        ),
+                      ),
+                      width: size.width * 0.9,
+                      // width: 200.0,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10.0),
+                          color: Colors.grey[200],
+                          boxShadow: [
+                            BoxShadow(color: Colors.black, blurRadius: 12.0)
+                          ],
+                          border: Border.all(color: Colors.black)),
+                    ),
+                  ),
+                  //*****************************************
+
+                  Container(
+                    child: Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          SizedBox(
+                            height: size.height * 0.05,
+                          ),
+                          Text(
+                            "43. What is the difference between controlled and uncontrolled components?",
+                            style: TextStyle(
+                                fontSize: 20.0, fontWeight: FontWeight.bold),
+                          ),
+                          SizedBox(
+                            height: size.height * 0.05,
+                          ),
+                          Text(
+                            "If the value displayed on UI by the Component is determined by form input, then it is called a controlled component. On the other side, if the State determines the value, then it is called an uncontrolled component.",
+                            style: TextStyle(fontSize: 20.0),
+                          ),
+                        ],
+                      ),
+                    ),
+                    width: size.width * 0.9,
+                    // width: 200.0,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10.0),
+                        color: Colors.grey[200],
+                        boxShadow: [
+                          BoxShadow(color: Colors.black, blurRadius: 12.0)
+                        ],
+                        border: Border.all(color: Colors.black)),
+                  ),
+                  //*****************************************
+                  Container(
+                    child: Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          SizedBox(
+                            height: size.height * 0.05,
+                          ),
+                          Text(
+                            "44. What is Style?",
+                            style: TextStyle(
+                                fontSize: 20.0, fontWeight: FontWeight.bold),
+                          ),
+                          SizedBox(
+                            height: size.height * 0.05,
+                          ),
+                          Text(
+                            "Style is a core component used in React Native. To make an app look stylish, we use Style Core Component to decorate it.",
+                            style: TextStyle(fontSize: 20.0),
+                          ),
+                        ],
+                      ),
+                    ),
+                    width: size.width * 0.9,
+                    // width: 200.0,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10.0),
+                        color: Colors.grey[200],
+                        boxShadow: [
+                          BoxShadow(color: Colors.black, blurRadius: 12.0)
+                        ],
+                        border: Border.all(color: Colors.black)),
+                  ),
+                  //*****************************************
+                  Container(
+                    child: Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          SizedBox(
+                            height: size.height * 0.05,
+                          ),
+                          Text(
+                            "45. Why do we use curly brace while importing some library?",
+                            style: TextStyle(
+                                fontSize: 20.0, fontWeight: FontWeight.bold),
+                          ),
+                          SizedBox(
+                            height: size.height * 0.05,
+                          ),
+                          Text(
+                            "Curly braces are used to import small pieces of library.",
+                            style: TextStyle(fontSize: 20.0),
+                          ),
+                        ],
+                      ),
+                    ),
+                    width: size.width * 0.9,
+                    // width: 200.0,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10.0),
+                        color: Colors.grey[200],
+                        boxShadow: [
+                          BoxShadow(color: Colors.black, blurRadius: 12.0)
+                        ],
+                        border: Border.all(color: Colors.black)),
+                  ),
+                  //*****************************************
+                  Container(
+                    child: Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          SizedBox(
+                            height: size.height * 0.05,
+                          ),
+                          Text(
+                            "46. What is Flexbox?",
+                            style: TextStyle(
+                                fontSize: 20.0, fontWeight: FontWeight.bold),
+                          ),
+                          SizedBox(
+                            height: size.height * 0.05,
+                          ),
+                          Text(
+                            "Flexbox is used to give a consistent layout on different screen sizes.",
+                            style: TextStyle(fontSize: 20.0),
+                          ),
+                        ],
+                      ),
+                    ),
+                    width: size.width * 0.9,
+                    // width: 200.0,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10.0),
+                        color: Colors.grey[200],
+                        boxShadow: [
+                          BoxShadow(color: Colors.black, blurRadius: 12.0)
+                        ],
+                        border: Border.all(color: Colors.black)),
+                  ),
+                  //*****************************************
+                  Container(
+                    child: Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          SizedBox(
+                            height: size.height * 0.05,
+                          ),
+                          Text(
+                            "47. What are the other modules need for react native navigation?",
+                            style: TextStyle(
+                                fontSize: 20.0, fontWeight: FontWeight.bold),
+                          ),
+                          SizedBox(
+                            height: size.height * 0.05,
+                          ),
+                          Text(
+                            "react-native-gesture-handler\n\nreact-native-reanimated\n\nreact-native-screens\n\nreact-native-safe-area-context\n\nreact-navigation-stack",
+                            style: TextStyle(fontSize: 20.0),
+                          ),
+                        ],
+                      ),
+                    ),
+                    width: size.width * 0.9,
+                    // width: 200.0,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10.0),
+                        color: Colors.grey[200],
+                        boxShadow: [
+                          BoxShadow(color: Colors.black, blurRadius: 12.0)
+                        ],
+                        border: Border.all(color: Colors.black)),
+                  ),
+                  //*****************************************
+                  Container(
+                    child: Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          SizedBox(
+                            height: size.height * 0.05,
+                          ),
+                          Text(
+                            "48. What are the similarities between React and React Native?",
+                            style: TextStyle(
+                                fontSize: 20.0, fontWeight: FontWeight.bold),
+                          ),
+                          SizedBox(
+                            height: size.height * 0.05,
+                          ),
+                          Text(
+                            "Both, React and React Native uses:\n\nReact Lifecycle Methods\n\nRecat State and Props\n\nRecat Components\n\nRedux Library",
+                            style: TextStyle(fontSize: 20.0),
+                          ),
+                        ],
+                      ),
+                    ),
+                    width: size.width * 0.9,
+                    // width: 200.0,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10.0),
+                        color: Colors.grey[200],
+                        boxShadow: [
+                          BoxShadow(color: Colors.black, blurRadius: 12.0)
+                        ],
+                        border: Border.all(color: Colors.black)),
+                  ),
+                  //*****************************************
+                  Container(
+                    child: Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          SizedBox(
+                            height: size.height * 0.05,
+                          ),
+                          Text(
+                            "49. Who is Founder of React Native?",
+                            style: TextStyle(
+                                fontSize: 20.0, fontWeight: FontWeight.bold),
+                          ),
+                          SizedBox(
+                            height: size.height * 0.05,
+                          ),
+                          Text(
+                            "Jordan Walke (Facebook) is founder of React Native.",
+                            style: TextStyle(fontSize: 20.0),
+                          ),
+                        ],
+                      ),
+                    ),
+                    width: size.width * 0.9,
+                    // width: 200.0,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10.0),
+                        color: Colors.grey[200],
+                        boxShadow: [
+                          BoxShadow(color: Colors.black, blurRadius: 12.0)
+                        ],
+                        border: Border.all(color: Colors.black)),
+                  ),
+                  //*****************************************
+                  Container(
+                    child: Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          SizedBox(
+                            height: size.height * 0.05,
+                          ),
+                          Text(
+                            "50. What were the major problems with MVC framework?",
+                            style: TextStyle(
+                                fontSize: 20.0, fontWeight: FontWeight.bold),
+                          ),
+                          SizedBox(
+                            height: size.height * 0.05,
+                          ),
+                          Text(
+                            "Applications were slow and inefficient.\n\nThere was huge memory wastage\n\nBecause of circular dependencies, a complicated model was created around models and views.",
                             style: TextStyle(fontSize: 20.0),
                           ),
                         ],
@@ -1907,6 +1911,7 @@ class Bootstrap extends StatelessWidget {
                         ],
                         border: Border.all(color: Colors.black)),
                   ),
+                  //*****************************************
                 ],
               ),
               SizedBox(

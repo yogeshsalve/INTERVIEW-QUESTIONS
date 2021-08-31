@@ -30,7 +30,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   liquid_swipe: ^2.1.0
   carousel_slider: ^4.0.0
-  
+ 
   
 
 dev_dependencies:

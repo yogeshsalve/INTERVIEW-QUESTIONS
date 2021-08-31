@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:top_interview_questions/SOFTWARE/mobile/mobcategories.dart';
 import 'package:top_interview_questions/SOFTWARE/web/webcategories.dart';
 import 'package:top_interview_questions/dashboard.dart';
 
@@ -66,7 +67,7 @@ class SoftCategories extends StatelessWidget {
               InkWell(
                 onTap: () {
                   Navigator.of(context).pushReplacement(MaterialPageRoute(
-                      builder: (BuildContext context) => WebCategories()));
+                      builder: (BuildContext context) => MobCategories()));
                 },
                 child: Container(
                   child: Card(

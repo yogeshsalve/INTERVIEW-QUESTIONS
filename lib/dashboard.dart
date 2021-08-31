@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:top_interview_questions/DATABASE/database.dart';
+import 'package:top_interview_questions/DATASCIENCE/datascience.dart';
 import 'package:top_interview_questions/HR/hrcategories.dart';
+import 'package:top_interview_questions/NETWORKING/networking.dart';
+import 'package:top_interview_questions/SECURITY/security.dart';
 import 'package:top_interview_questions/SOFTWARE/softcategories.dart';
+import 'package:top_interview_questions/drawer.dart';
 
 class Dashboard extends StatelessWidget {
   // final List dummyList = List.generate(1000, (index) {
@@ -24,6 +29,7 @@ class Dashboard extends StatelessWidget {
         // onPressed:() => Navigator.pop(context, MaterialPageRoute(builder: (context) => MainScreen()),),
         // ),
       ),
+      drawer: MyDrawer(),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
@@ -113,148 +119,172 @@ class Dashboard extends StatelessWidget {
                   ),
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.all(5.0),
-                child: Container(
-                  child: Card(
-                    color: Colors.blue,
-                    elevation: 15,
-                    child: ListTile(
-                      leading: Icon(
-                        Icons.router,
-                        color: Colors.white,
-                        size: 40.0,
+              InkWell(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(MaterialPageRoute(
+                      builder: (BuildContext context) => Networking()));
+                },
+                child: Padding(
+                  padding: const EdgeInsets.all(5.0),
+                  child: Container(
+                    child: Card(
+                      color: Colors.blue,
+                      elevation: 15,
+                      child: ListTile(
+                        leading: Icon(
+                          Icons.router,
+                          color: Colors.white,
+                          size: 40.0,
+                        ),
+                        title: Text(
+                          'Networking ',
+                          style: TextStyle(
+                              color: Colors.white, fontWeight: FontWeight.bold),
+                          textScaleFactor: 1.4,
+                        ),
+                        trailing: Icon(
+                          Icons.double_arrow,
+                          color: Colors.white,
+                        ),
+                        subtitle: Text('Networking is key to success',
+                            style: TextStyle(color: Colors.white)),
+                        selected: true,
                       ),
-                      title: Text(
-                        'Networking ',
-                        style: TextStyle(
-                            color: Colors.white, fontWeight: FontWeight.bold),
-                        textScaleFactor: 1.4,
-                      ),
-                      trailing: Icon(
-                        Icons.double_arrow,
-                        color: Colors.white,
-                      ),
-                      subtitle: Text('Networking is key to success',
-                          style: TextStyle(color: Colors.white)),
-                      selected: true,
                     ),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10.0),
+                        color: Colors.grey[200],
+                        boxShadow: [
+                          BoxShadow(color: Colors.black, blurRadius: 12.0)
+                        ],
+                        border: Border.all(color: Colors.black)),
                   ),
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10.0),
-                      color: Colors.grey[200],
-                      boxShadow: [
-                        BoxShadow(color: Colors.black, blurRadius: 12.0)
-                      ],
-                      border: Border.all(color: Colors.black)),
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.all(5.0),
-                child: Container(
-                  child: Card(
-                    color: Colors.purple,
-                    elevation: 15,
-                    child: ListTile(
-                      leading: Icon(
-                        Icons.storage,
-                        color: Colors.white,
-                        size: 40.0,
+              InkWell(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(MaterialPageRoute(
+                      builder: (BuildContext context) => Database()));
+                },
+                child: Padding(
+                  padding: const EdgeInsets.all(5.0),
+                  child: Container(
+                    child: Card(
+                      color: Colors.purple,
+                      elevation: 15,
+                      child: ListTile(
+                        leading: Icon(
+                          Icons.storage,
+                          color: Colors.white,
+                          size: 40.0,
+                        ),
+                        title: Text(
+                          'Databases ',
+                          style: TextStyle(
+                              color: Colors.white, fontWeight: FontWeight.bold),
+                          textScaleFactor: 1.4,
+                        ),
+                        trailing: Icon(
+                          Icons.double_arrow,
+                          color: Colors.white,
+                        ),
+                        subtitle: Text('Data is the new oil',
+                            style: TextStyle(color: Colors.white)),
+                        selected: true,
                       ),
-                      title: Text(
-                        'Databases ',
-                        style: TextStyle(
-                            color: Colors.white, fontWeight: FontWeight.bold),
-                        textScaleFactor: 1.4,
-                      ),
-                      trailing: Icon(
-                        Icons.double_arrow,
-                        color: Colors.white,
-                      ),
-                      subtitle: Text('Data is the new oil',
-                          style: TextStyle(color: Colors.white)),
-                      selected: true,
                     ),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10.0),
+                        color: Colors.grey[200],
+                        boxShadow: [
+                          BoxShadow(color: Colors.black, blurRadius: 12.0)
+                        ],
+                        border: Border.all(color: Colors.black)),
                   ),
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10.0),
-                      color: Colors.grey[200],
-                      boxShadow: [
-                        BoxShadow(color: Colors.black, blurRadius: 12.0)
-                      ],
-                      border: Border.all(color: Colors.black)),
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.all(5.0),
-                child: Container(
-                  child: Card(
-                    color: Colors.pink,
-                    elevation: 15,
-                    child: ListTile(
-                      leading: Icon(
-                        Icons.analytics,
-                        color: Colors.white,
-                        size: 40.0,
+              InkWell(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(MaterialPageRoute(
+                      builder: (BuildContext context) => Datascience()));
+                },
+                child: Padding(
+                  padding: const EdgeInsets.all(5.0),
+                  child: Container(
+                    child: Card(
+                      color: Colors.pink,
+                      elevation: 15,
+                      child: ListTile(
+                        leading: Icon(
+                          Icons.analytics,
+                          color: Colors.white,
+                          size: 40.0,
+                        ),
+                        title: Text(
+                          'Data Science',
+                          style: TextStyle(
+                              color: Colors.white, fontWeight: FontWeight.bold),
+                          textScaleFactor: 1.4,
+                        ),
+                        trailing: Icon(
+                          Icons.double_arrow,
+                          color: Colors.white,
+                        ),
+                        subtitle: Text('Data really powers everything.',
+                            style: TextStyle(color: Colors.white)),
+                        selected: true,
                       ),
-                      title: Text(
-                        'Data Science',
-                        style: TextStyle(
-                            color: Colors.white, fontWeight: FontWeight.bold),
-                        textScaleFactor: 1.4,
-                      ),
-                      trailing: Icon(
-                        Icons.double_arrow,
-                        color: Colors.white,
-                      ),
-                      subtitle: Text('Data really powers everything.',
-                          style: TextStyle(color: Colors.white)),
-                      selected: true,
                     ),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10.0),
+                        color: Colors.grey[200],
+                        boxShadow: [
+                          BoxShadow(color: Colors.black, blurRadius: 12.0)
+                        ],
+                        border: Border.all(color: Colors.black)),
                   ),
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10.0),
-                      color: Colors.grey[200],
-                      boxShadow: [
-                        BoxShadow(color: Colors.black, blurRadius: 12.0)
-                      ],
-                      border: Border.all(color: Colors.black)),
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.all(5.0),
-                child: Container(
-                  child: Card(
-                    color: Colors.red,
-                    elevation: 15,
-                    child: ListTile(
-                      leading: Icon(
-                        Icons.security,
-                        color: Colors.white,
-                        size: 40.0,
+              InkWell(
+                onTap: () {
+                  Navigator.of(context).pushReplacement(MaterialPageRoute(
+                      builder: (BuildContext context) => Security()));
+                },
+                child: Padding(
+                  padding: const EdgeInsets.all(5.0),
+                  child: Container(
+                    child: Card(
+                      color: Colors.red,
+                      elevation: 15,
+                      child: ListTile(
+                        leading: Icon(
+                          Icons.security,
+                          color: Colors.white,
+                          size: 40.0,
+                        ),
+                        title: Text(
+                          'Security ',
+                          style: TextStyle(
+                              color: Colors.white, fontWeight: FontWeight.bold),
+                          textScaleFactor: 1.4,
+                        ),
+                        trailing: Icon(
+                          Icons.double_arrow,
+                          color: Colors.white,
+                        ),
+                        subtitle: Text('Security is much more than IT.',
+                            style: TextStyle(color: Colors.white)),
+                        selected: true,
                       ),
-                      title: Text(
-                        'Security ',
-                        style: TextStyle(
-                            color: Colors.white, fontWeight: FontWeight.bold),
-                        textScaleFactor: 1.4,
-                      ),
-                      trailing: Icon(
-                        Icons.double_arrow,
-                        color: Colors.white,
-                      ),
-                      subtitle: Text('Security is much more than IT.',
-                          style: TextStyle(color: Colors.white)),
-                      selected: true,
                     ),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10.0),
+                        color: Colors.grey[200],
+                        boxShadow: [
+                          BoxShadow(color: Colors.black, blurRadius: 12.0)
+                        ],
+                        border: Border.all(color: Colors.black)),
                   ),
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10.0),
-                      color: Colors.grey[200],
-                      boxShadow: [
-                        BoxShadow(color: Colors.black, blurRadius: 12.0)
-                      ],
-                      border: Border.all(color: Colors.black)),
                 ),
               ),
             ],
