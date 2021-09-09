@@ -28,7 +28,7 @@ class Security extends StatelessWidget {
         // ),
       ),
       body: Container(
-        color: Colors.yellow[300],
+        color: Colors.blue[300],
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
